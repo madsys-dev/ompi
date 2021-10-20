@@ -63,4 +63,9 @@ extern struct ADIOI_Fns_struct ADIO_QUOBYTEFS_operations;
 extern void ADIOI_QUOBYTEFS_CreateAdapter(const char *, int *);
 #endif
 
+#ifdef ROMIO_MADFS
+extern struct ADIOI_Fns_struct ADIO_MADFS_operations;
+/* prototypes are in adio/ad_mad/ad_madfs.h */
+#endif
+
 #endif /* ADIOI_FS_PROTO_H_INCLUDED */

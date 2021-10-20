@@ -181,6 +181,9 @@ static struct ADIO_FSTypes fstypes[] = {
 #ifdef ROMIO_QUOBYTEFS
     {&ADIO_QUOBYTEFS_operations, ADIO_QUOBYTEFS, "quobyte:"},
 #endif
+#ifdef ROMIO_MADFS
+    {&ADIO_MADFS_operations, ADIO_MADFS, "madfs:"},
+#endif
     {0, 0, 0}   /* guard entry */
 };
 
